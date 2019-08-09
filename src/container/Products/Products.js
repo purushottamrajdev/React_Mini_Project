@@ -37,7 +37,7 @@ class Products extends Component{
             );
         });
         return(
-        <div>
+            <div>
                <div className="sidenav">
                 <button onClick={()=>this.props.onGetALLProducts()}>ALL Product</button>
                 <button onClick={()=>this.props.onFilterProduct('vegetables')}>Vegitables</button>
@@ -45,8 +45,8 @@ class Products extends Component{
                </div>
                <div className="content">
                 {products}
-                </div>
-        </div>
+               </div>
+            </div>
          );
      }
 }

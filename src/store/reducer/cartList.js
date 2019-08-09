@@ -8,9 +8,9 @@ const reducer=(state=initialState,action)=>
     {
         
          case actionType.ADD_PRODUCT:
-         let tempCart=[...state.cartList];
-         let obj = tempCart.find(obj => obj.id == action.data.id);
-         let newCart=tempCart.filter(function(ele){
+            let tempCart=[...state.cartList];
+            let obj = tempCart.find(obj => obj.id == action.data.id);
+            let newCart=tempCart.filter(function(ele){
             return ele != obj;
         });
         if(obj){

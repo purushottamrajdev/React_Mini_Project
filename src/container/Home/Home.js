@@ -15,21 +15,21 @@ class Home extends Component{
          return(
              <div>
                  <header>
-                 <ul className="menu">
-                 <NavLink className="Link" to={{pathname:'/'}}  >Home</NavLink>
-                 <NavLink className="Link" to={{pathname:'/products'}}  >Products</NavLink>
-                 <NavLink className="Link" to={{pathname:'/cart'}}>Cart<img src={logo} alt="cartLogo" className="cartlogo"/><span className="counter">{this.props.cartList.length}</span></NavLink>
-                 <NavLink className="Link" to={{pathname:'/admin-option'}}>Admin Options</NavLink>
-                </ul>
+                    <ul className="menu">
+                        <NavLink className="Link" to={{pathname:'/'}}  >Home</NavLink>
+                        <NavLink className="Link" to={{pathname:'/products'}}  >Products</NavLink>
+                        <NavLink className="Link" to={{pathname:'/cart'}}>Cart<img src={logo} alt="cartLogo" className="cartlogo"/><span className="counter">{this.props.cartList.length}</span></NavLink>
+                        <NavLink className="Link" to={{pathname:'/admin-option'}}>Admin Options</NavLink>
+                    </ul>
                 </header>
                
                 <Switch>
-                <Route path={"/products"}  component={Products} />
-                <Route path={"/admin-option"}  component={ProductList} />
-                <Route path={"/new-product"}  component={NewProduct} />
-                <Route path={"/edit-product/:id"}  component={EditProduct} />
-                <Route path={"/cart"}  component={CartList} />
-                <img src={HomeImg} alt="Organic Store" className="HomeImg"/>
+                    <Route path={"/products"}  component={Products} />
+                    <Route path={"/admin-option"}  component={ProductList} />
+                    <Route path={"/new-product"}  component={NewProduct} />
+                    <Route path={"/edit-product/:id"}  component={EditProduct} />
+                    <Route path={"/cart"}  component={CartList} />
+                    <img src={HomeImg} alt="Organic Store" className="HomeImg"/>
                 </Switch>
              </div>
          );

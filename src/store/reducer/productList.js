@@ -8,7 +8,6 @@ const reducer=(state=initialState,action)=>
 {
     switch(action.type)
     {
-
         case actionType.GET_PRODUCT:
         return{...state,
             productList:action.data

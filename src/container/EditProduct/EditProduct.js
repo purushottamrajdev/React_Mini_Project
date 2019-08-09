@@ -46,8 +46,7 @@ class EditProduct extends Component {
     
     render () {
         let redirect=null;
-        if(this.state.isSubmited)
-        { 
+        if(this.state.isSubmited){ 
             redirect=<Redirect to="/admin-option" />
         }
         return (

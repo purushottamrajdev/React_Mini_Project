@@ -2,9 +2,8 @@ import React,{Component} from 'react';
 import ListProduct from '../../components/ListProduct/ListProduct';
 import {connect} from 'react-redux';
 import * as actionCreators from '../../store/actions/productList';
-import {Route,NavLink} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 import './ProductList.css';
-import NewProduct from '../NewProduct/NewProduct';
 class ProductList extends Component{
     componentDidMount () {
         this.props.onGetProductList();
@@ -35,8 +34,8 @@ class ProductList extends Component{
          return(
              <div>
                  <center>
-                  <NavLink to={{pathname:'/new-product'}}  ><button className="NewProductButton">New Product</button></NavLink>
-                {productList}
+                    <NavLink to={{pathname:'/new-product'}}  ><button className="NewProductButton">New Product</button></NavLink>
+                    {productList}
                 </center>
              </div>
          );
