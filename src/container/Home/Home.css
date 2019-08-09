@@ -1,0 +1,37 @@
+
+ .menu{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+.menu li {
+  float: left;
+}
+
+.Link {
+  display: inline-block;
+  color: #818181;
+  text-align: left;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.Link:hover {
+  background-color: #111111;
+}
+.counter{
+   color:white;
+}
+.cartlogo{
+   height: 30px;
+   width: 50px;
+   color:white;
+}
+
+.HomeImg{
+   width: auto;
+   height: 500px;
+}

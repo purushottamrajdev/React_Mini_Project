@@ -1,0 +1,36 @@
+.Products {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+    width: 80%;
+    margin: auto;
+    border-color: red;
+}
+.sidenav {
+    height: 100%;
+    width: 150px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #333333;
+    overflow-x: hidden;
+    padding-top: 50px;
+  }
+  
+  .sidenav button {
+    padding: 5px;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    margin: 20px;
+    width: 100px;
+  }
+  
+  .sidenav button:hover {
+    color: #45098a;
+  }
+  
+  .content{
+    margin-left: 200px; /* Same as the width of the sidenav */
+  }

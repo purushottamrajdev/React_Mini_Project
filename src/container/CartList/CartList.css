@@ -1,0 +1,8 @@
+.ProductList{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+    width: 80%;
+    margin: auto;
+    border-color: red;
+}

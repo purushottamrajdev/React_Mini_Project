@@ -1,0 +1,29 @@
+.ListProduct{
+    padding: 16px;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 3px #ccc;
+    margin: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: block;
+    width:500px;
+}
+.ListProduct:hover,
+.ListProduct:active {
+    background-color: #C0DDF5;
+}
+
+.ListProduct table, td, th {  
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .ListProduct table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .ListProduct th, td {
+    padding: 15px;
+  }
+ 
